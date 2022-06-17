@@ -313,7 +313,13 @@ print(var0) # 1
 
 
 
-var0, *rest, var9 = tuple1
-print(var0)
-print(var9)
-print(rest)
+# var0, *rest, var9 = tuple1
+# print(var0)
+# print(var9)
+# print(rest)
+
+print(tuple2[0:6]) # I love   # access a range
+
+print(tuple2[0::2]) # Ilv yfml   ------ access every other character
+print(tuple2[0::3]) # Io  my   ------ access every third character   -I- l-o-ve- -my- -fa-m-il-y-
+                                                                  
