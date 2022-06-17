@@ -296,3 +296,16 @@ list9.sort()
 print(list8) #[2, 3, 4, 5, 6, 7, 8, 9]
 print(list9) # ['a', 'd', 'f', 'h', 'o', 'p', 'y', 'z']
 
+# Tuples     use parenthesis instead of square brackets  --- UNMUTABLE!!!!!!
+
+tuple1 = (1,2,3,4,5,6)
+tuple2 = ('I love my family')
+
+
+var0 = tuple1[0]
+var1 = tuple1[1]
+var2 = tuple1[2]
+var3 = tuple1[3]
+var4 = tuple1[4]
+
+print(var0) # 1
