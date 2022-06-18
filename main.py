@@ -322,4 +322,21 @@ print(tuple2[0:6]) # I love   # access a range
 
 print(tuple2[0::2]) # Ilv yfml   ------ access every other character
 print(tuple2[0::3]) # Io  my   ------ access every third character   -I- l-o-ve- -my- -fa-m-il-y-
-                                                                  
+print(tuple2[1::2]) #  oem aiy  ------ access every other character starting at index 1  
+#  I- -l-o-v-e- -m-y- -f-a-m-i-l-y-        
+# 
+#loop through a tuple
+for i in tuple1:
+    print(i)
+
+# Tuple count method      ------- counts the number of times a value occurs in a tuple
+# 
+tuple3 = ('Woodard', 'Scheff', 'Sandra', 'Matt', 'Matt')
+
+count = tuple3.count('Matt')
+print(count)  #   2
+
+# Tuple index method      ------- returns the index of the first occurrence of the value
+
+index = tuple3.index('Sandra')
+print(index)  #   2
