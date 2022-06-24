@@ -22,3 +22,50 @@ set5 = {'Matt', 'Joe', 'John'}
 set6 = {'Matt', 'Joe'}
 set7 = set5.difference(set6)
 print(set7) # {'John'}
+
+# SET difference_update method    --  removes elements from the set
+set8 = {"New York", "Los Angeles", "Chicago", "Houston", "Philadelphia", }
+set9 = {"New York", "Los Angeles", "Chicago", "Houston", "Phoenix",}
+set8.difference_update(set9)
+print(set8) # {'John'}
+
+
+###############  difference creates a new set, whereas difference_update modifies the set in place(removes the shared elements)
+
+# SET discard method   --  removes the specified element from the set
+set10 = {'Matt', 'Joe', 'John'}
+set10.discard('Matt')
+print(set10) # {'Joe', 'John'}
+
+# SET intersection method    --  returns a new set with elements common to the two sets
+set11 = {'Matt', 'Joe', 'John'}
+set12 = {'Matt', 'Joe'}
+set13 = set11.intersection(set12)
+print(set13) # {'Matt', 'Joe'}
+
+# SET intersection_update method    --  removes jon-shared elements from the set
+set14 = {"New York", "Los Angeles", "Chicago", "Houston", "Philadelphia", }
+set15 = {"New York", "Los Angeles", "Chicago", "Houston", "Phoenix",}
+set14.intersection_update(set15)
+print(set14) # {'New York', 'Los Angeles', 'Chicago', 'Houston'}
+
+
+# SET isdisjoint method    --  returns True if the two sets have a null intersection(no elements in common)
+#returns false if there is an intersection(common elements)
+
+set16 = {'Matt', 'Joe'}
+set17 = {'Sandra', 'John'}
+set18 = set16.isdisjoint(set17)
+print(set18) # True
+
+# SET issubset method    --  returns True if all the elements of the first set are contained in the second
+set19 = {'Matt', 'Joe'}
+set20 = {'Matt', 'Joe', 'John'}
+set21 = set19.issubset(set20)
+print(set21) # True
+
+# SET issuperset method    --  returns True if all the elements of the second set are contained in the first
+set22 = set20.issuperset(set19)
+print(set22) # True
+
+# SET pop method    --  removes and returns an arbitrary element from the set
