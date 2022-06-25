@@ -69,3 +69,37 @@ set22 = set20.issuperset(set19)
 print(set22) # True
 
 # SET pop method    --  removes and returns an arbitrary element from the set
+set23 = {'Matt', 'Joe', 'John'}
+set24 = set23.pop()
+print(set24) # John       element popped is random
+
+# SET remove method    --  removes the specified element from the set
+
+set25 = {'Matt', 'Joe', 'John'}
+set25.remove('Matt')
+print(set25) # {'Joe', 'John'}
+
+# SET symmetric_difference method    --  returns a new set with the non-shared elements of the two sets
+
+set26 = {'Apple', 'Banana', 'Cherry'}
+set27 = {'Apple', 'Cherry', 'Durian'}
+set28 = set26.symmetric_difference(set27)
+print(set28) # {'Banana', 'Durian'}
+
+# SET symmetric_difference_update method    --  removes the shared elements from the set  - mutates the set
+set29 = {"New York", "Los Angeles", "Chicago", "Houston", "Philadelphia", }
+set30 = {"New York", "Los Angeles", "Chicago", "Houston", "Phoenix",}
+set29.symmetric_difference_update(set30)
+print(set29) # {'Phoenix'}
+
+# SET union method    --  returns a new set with the 2 set concatenated, with no duplicates
+set31 = {'Matt', 'Joe', 'John'}
+set32 = {'liam', 'sandra', 'connor', 'Matt'}
+set33 = set31.union(set32)
+print(set33) # {'Joe', 'connor', 'John', 'liam', 'Matt', 'sandra'}
+
+# SET update method    --  adds the elements of the second set to the first set - mutates the set - no new set
+set34 = {'Matt', 'Joe', 'John'}
+set35 = {'liam', 'sandra', 'connor', 'Matt'}
+set34.update(set35)
+print(set34) # {'Joe', 'John', 'liam', 'sandra', 'connor', 'Matt'}
